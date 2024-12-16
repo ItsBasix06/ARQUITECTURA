@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+        nav{
+            background-color: brown;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        nav a{
+            text-decoration: none;
+            color: white;
+        }
+        nav a:hover{
+            color: yellow;
+            text-shadow: 3px 3px 3px black;
+        }
+        header{
+            background-image: url(https://static-wc.arcux.net/uploads/20200529130551/la-arquitectura-1.jpg);
+            height: 250px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        header h1{
+            font-size: 3em;
+            color: yellow;
+            text-shadow: 3px 3px 3px black;
+        }
+        header h3{
+            color: white;
+            text-shadow: 3px 3px 3px black;
+        }
+        .titulo{
+            text-align: center;
+            color: brown;
+            border: 2px solid green;
+            padding: 5px;
+            padding-bottom: 10px
+        }
+        #contenedor-servicios{
+            display: flex;
+            border: 2px dashed blue;
+            padding: 20px;
+        }
+        #caja{
+            border: 4px solid red;
+            padding: 20px;
+        }
+        section{
+            padding: 20px;
+        }
+        section#servicios{
+            background-color: aquamarine;
+        }
+        #contenedor-obras{
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            background-color: beige;
+            justify-content: space-around;
+        }
+        section#obras{
+            background-color: beige;
+        }
+        .obra{
+            width: 30%;
+        }
+        .obra img{
+            padding: 10px;
+            width: 90%;
+        }
+        footer{
+            padding: 50px;
+            background-color: gray;
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            
+        }
+        #contactar{
+            width: 100%;
+            padding: 10px;
+            border-bottom: 2px solid white;
+        }
+        .caja-footer{
+            width: 33%;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#Inicio">Inicio</a>
+        <a href="#Servicios">Servicios</a>
+        <a href="#Obras">Obras</a>
+        <a href="#Contacto">Contacto</a>
+    </nav>
+    <header>
+        <div id="contenedor-header">
+        <h1>Ágora</h1>
+        <h3>Estudio de arquitectura.</h3>
+    </div>
+    </header>
+    <section id="servicios">
+        <h1 class="titulo">
+            Servicios
+        </h1>
+        <div id="contenedor-servicios">
+            <div id="caja">
+                <h1>1.Diseño de interiores</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nihil deleniti totam! A asperiores ut nulla numquam assumenda consequuntur consequatur cum deserunt distinctio iste saepe, debitis blanditiis, rem facilis. Maiores.</p>
+                <h1>2.Reformas</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt blanditiis, fugiat ullam natus optio excepturi minima quaerat suscipit numquam quis, corrupti dolor, facilis aliquam eius. Fuga impedit at beatae quisquam.</p>
+            </div>
+            <div id="caja">
+                <h1>3.Demoliciones</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut totam itaque eius dolorem molestiae velit necessitatibus cumque. Quos deserunt accusamus ex vitae? Quaerat at sunt quia blanditiis, accusamus aut unde.</p>
+
+            </div>
+        </div>
+        </section>
+        <section id="obras">
+            <h1 class="titulo">Obras</h1>
+            <div id="contenedor-obras">
+                <div class="obra">
+                    <img src="https://i.pinimg.com/originals/e8/aa/a2/e8aaa218f1a475e95ca09ac8def2e83e.jpg" alt="" >
+                    <p>Sevilla</p>
+                </div>
+                <div class="obra">
+                    <img src="https://i.pinimg.com/originals/e8/aa/a2/e8aaa218f1a475e95ca09ac8def2e83e.jpg" alt="">
+                    <p>Madrid</p>
+                </div>
+                <div class="obra">
+                    <img src="https://i.pinimg.com/originals/e8/aa/a2/e8aaa218f1a475e95ca09ac8def2e83e.jpg" alt="">
+                    <p>Barcelona</p>
+                </div>
+                <div class="obra">
+                    <img src="https://i.pinimg.com/originals/e8/aa/a2/e8aaa218f1a475e95ca09ac8def2e83e.jpg" alt="">
+                    <p>Asturias</p>
+                </div>
+                <div class="obra">
+                    <img src="https://i.pinimg.com/originals/e8/aa/a2/e8aaa218f1a475e95ca09ac8def2e83e.jpg" alt="">
+                    <p>Cádiz</p>
+                </div>
+                <div class="obra">
+                    <img src="https://i.pinimg.com/originals/e8/aa/a2/e8aaa218f1a475e95ca09ac8def2e83e.jpg" alt="">
+                    <p>Valencia</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+
+            <div id="contactar">
+                <p>Contacte con nosotros.Trabajamos los 365 dias del año</p>
+            </div>
+            <div class="caja-footer">
+                <h3>Enlaces</h3>
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="https://Twitter.com" target="_blank">Twitter</a>
+            </div>
+            <div class="caja-footer">
+                <h3>Estamos en</h3>
+                <p>Avda. Los Institutos s/n</p>
+                <p>13600 Alcazar de San Juan</p>
+            </div>
+            <div class="caja-footer">
+                <h3>Email</h3>
+                <p>info@agora.com</p>
+            </div>
+            
+        </div>
+        </footer>
+</body>
+</html>
+</footer>
+</body>
+</html>
